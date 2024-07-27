@@ -1,0 +1,67 @@
+/* Add all your styles here */
+*{
+  margin:0px;
+  padding:0px;
+}
+button,.box,.i{
+  box-shadow:1px 1px 6px black;
+}
+a{
+  color:white;
+  text-decoration:none;
+}
+.flex{
+  display:flex;
+  align-items:center;
+}
+.container{
+  width:100vw;
+}
+.box{
+  width:90vw;
+  padding:2vw;
+  margin:2vw auto;
+  background-color:lightblue;
+}
+.display{
+  justify-content:space-between;
+}
+button{
+  transform:rotate(90deg);
+  font-weight:bold;
+  height:6vw;
+  width:6vw;
+  border-radius:40%;
+}
+.b{
+  animation:r .2s linear forwards;
+}
+@keyframes r{
+  from{
+    transform:rotate(90deg);
+  }
+  to{
+    transform:rotate(270deg);
+  }
+}
+.items{
+  justify-content:space-around;
+  display:none;
+}
+.i{
+  background-color:red;
+  border-radius:40px;
+  padding:1vw;
+}
+.hide{
+  display:flex;
+  animation:op 1s ease-out;
+}
+@keyframes op{
+  from{
+    opacity:0;
+  }
+  to{
+    opacity:1;
+  }
+}
