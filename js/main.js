@@ -1,8 +1,14 @@
 document.addEventListener('DOMContentLoaded',()=>{
   document.querySelectorAll('button').forEach(but=>{
     but.addEventListener('click',()=>{
-      but.closest('.box').querySelector('.items').classList.toggle('visible');
+      let topic = but.closest('.box').querySelector('.items')
+      topic.classList.toggle('visible');
       but.classList.toggle('r1');
+      document.querySelectorAll('.items').forEach(item=>{
+        if(item !== topic){
+          item.classList.remove('visible')
+        }
+      })
     })
   })
 })
